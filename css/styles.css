@@ -1,0 +1,513 @@
+
+.wrapper-content {
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    flex-shrink: 0;
+    background-color: #122543;
+    width: auto;
+}
+
+.logo {
+    flex: 0 0 auto;
+    margin-left: 160px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    max-width: 267px;
+}
+
+.right-nav {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 160px;
+}
+
+.right-nav a {
+    color: #E2FF65;
+    font-family: Volkhov;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all .50s ease;
+    margin-left: 55px;
+}
+
+.right-nav a:hover{
+    color:aliceblue;
+    transform: scale(1.05);
+}
+
+.toggle-button {
+    position: absolute;
+    cursor: pointer;
+    top: 4rem;
+    right: 11.5rem;
+    display: none;
+    flex-direction: column;
+    align-content: space-between;
+    width: 30px;
+    height: auto;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #E2FF65;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+@media (max-width: 1350px){
+    .toggle-button{
+        display: flex;
+
+    }
+
+    .right-nav{
+        display: none;
+    }
+
+          .right-nav.show {
+              display: flex;
+              /* Show the menu when the burger icon is clicked */
+              flex-direction: column;
+              position: static;
+              top: 135px;
+              width: 100%;
+              height: 250px;
+              background-color: #122543;
+              /* Change this to your preferred background color */
+              opacity: 0;
+                /* Initially set the menu to be transparent */
+              transform: translateY(-10px);
+                /* Move the menu up by 10px */
+              transition: opacity 1s ease, transform 1s ease;
+          }
+    
+          .right-nav.show a {
+              margin-top: 30px;
+              margin-bottom: 10px;
+          }
+
+                .toggle-button .bar {
+                    display: block;
+                    background-color: #E2FF65;
+                    /* Change this to your preferred icon color */
+                    transition: background-color 1s ease;
+                    /* Add transition for smooth color change */
+                }
+
+                    .right-nav.show.show-animation {
+                     opacity: 1;
+                        /* Make the menu visible */
+                    transform: translateY(0);
+                    /* Move the menu back to its original position */
+                    animation-delay: 1s;
+                    }
+
+}
+
+@media (max-width: 760px) {
+    .toggle-button {
+        display: flex;
+        right: 7.5rem;
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    .logo{
+        margin-left: 80px;
+    }
+
+
+}
+
+
+@media (max-width: 560px) {
+    .toggle-button {
+        display: flex;
+        flex: 0 0 auto;
+        width: 20px;
+        height: auto;
+        top: 2.75rem;
+        right: 5rem;
+    }
+
+    .toggle-button .bar {
+        height: 2px;
+        width: 100%;
+        background-color: #E2FF65;
+        border-radius: 5px;
+        margin-bottom: 3px;
+    }
+
+
+    .right-nav {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 40px;
+        width: 130px;
+    }
+
+
+    .right-nav.show {
+        display: flex;
+        /* Show the menu when the burger icon is clicked */
+        flex-direction: column;                
+        position: static;
+        height: 260px;
+        background-color: #122543;
+        /* Change this to your preferred background color */
+        
+    }
+            
+    .right-nav.show a {
+
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.main-part {
+    background: url("IndexBG.png"), lightgray 0px -105.88px / 100% 119.772%;
+    background-size: cover;
+    flex-shrink: 0;
+    height: auto;
+}
+
+
+.index-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.index-top .index-left-part{
+    margin-left: 160px;
+    width: 650px;
+    height: 784px;
+}
+
+.index-top .index-left-part .left-text{
+    flex-shrink: 0;
+    color: #0B1629;
+    font-family: Volkhov;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 111.8px */
+    letter-spacing: -2px;
+
+}
+
+.index-top .index-right-part{
+    display: flex;
+    width: 700px;
+    height: 214px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 160px;
+    margin-bottom: 40px;
+}
+
+
+.index-top .index-right-part .right-text{
+    color: #0B1629;
+    text-align: center;
+    font-family: Volkhov;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 31.2px */
+    letter-spacing: 1px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.index-top .index-right-part .index-button{
+    max-width: 326px;
+    max-height: 93px;
+    flex-shrink: 0;
+    margin-left: 235px;
+}
+
+.index-top .index-right-part .index-button button {
+    padding: 20px 38px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #122543;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    color: #E2FF65;
+    font-family: Volkhov;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 31.2px */
+    letter-spacing: 1px;
+}
+
+.index-top .index-right-part .index-button button:hover {
+    background-color: #122543;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+}
+
+.index-top .index-right-part .index-button button:active {
+    background-color: #122543;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+
+
+
+
+.index-bottom{
+    display: flex;
+    justify-content: center;
+    transform: rotate(360deg);
+}
+
+.index-bottom .arrow-bottom{
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+  
+}
+
+
+
+@media (max-width: 1685px) {
+    .index-top .index-left-part {
+        margin-left: 160px;
+        max-width: 450px;
+        max-height: 500px;
+    }
+
+    .index-top .index-left-part .left-text {
+        flex-shrink: 0;
+        color: #0B1629;
+        font-family: Volkhov;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        /* 111.8px */
+        letter-spacing: -2px;
+    }
+
+    .index-top .index-right-part {
+        display: flex;
+        max-width: 500px;
+        max-height: 150px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-right: 160px;
+        margin-bottom: 40px;
+    }
+
+    .index-top .index-right-part .right-text {
+        color: #0B1629;
+        text-align: center;
+        font-family: Volkhov;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        /* 31.2px */
+        letter-spacing: 1px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+
+    .index-top .index-right-part .index-button {
+        max-width: 450px;
+        max-width: 93px;
+        flex-shrink: 0;
+        margin-left: 140px;
+    }
+
+    .index-bottom {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        transform: rotate(360deg);
+    }
+    
+    .index-bottom .arrow-bottom {
+        max-width: 55px;
+        max-width: 55px;
+        flex-shrink: 0;
+    
+    }
+
+}
+
+/* @media (max-width: 1280px) {
+    .index-top .index-left-part {
+        margin-left: 250px;
+        width: 250px;
+        height: 400px;
+    }
+
+    .index-top .index-left-part .left-text {
+        flex-shrink: 0;
+        color: #0B1629;
+        font-family: Volkhov;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+
+        letter-spacing: -2px;
+    }
+
+    .index-top .index-right-part {
+        display: flex;
+        width: 350px;
+        height: 150px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-right: 200px;
+        margin-bottom: 40px;
+    }
+
+    .index-top .index-right-part .right-text {
+        color: #0B1629;
+        text-align: center;
+        font-family: Volkhov;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+
+        letter-spacing: 1px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+
+    .index-top .index-right-part .index-button {
+        width: 250px;
+        height: 70px;
+        flex-shrink: 0;
+        margin-left: 95px;
+    }
+
+    .index-top .index-right-part .index-button button {
+        font-size: 12px;
+    }
+
+    .index-bottom {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1060px) {
+    .index-top .index-left-part {
+        margin-left: 250px;
+        width: 250px;
+        height: 400px;
+    }
+
+    .index-top .index-left-part .left-text {
+        flex-shrink: 0;
+        color: #0B1629;
+        font-family: Volkhov;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+
+        letter-spacing: -2px;
+    }
+
+    .index-top .index-right-part {
+        display: flex;
+        width: 350px;
+        height: 150px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-right: 200px;
+        margin-bottom: 40px;
+    }
+
+    .index-top .index-right-part .right-text {
+        color: #0B1629;
+        text-align: center;
+        font-family: Volkhov;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+
+        letter-spacing: 1px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+
+    .index-top .index-right-part .index-button {
+        width: 250px;
+        height: 70px;
+        flex-shrink: 0;
+        margin-left: 95px;
+    }
+
+    .index-top .index-right-part .index-button button {
+        font-size: 12px;
+    }
+
+    .index-bottom {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@media (max-width: 560px) {
+
+} */

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Khalzieva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.querySelector(".toggle-button");
+            const rightNav = document.querySelector(".right-nav");
+
+            toggleButton.addEventListener("click", function () {
+                rightNav.classList.toggle("show");
+                rightNav.classList.toggle("show-animation"); /* Add or remove the class for animation */
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="index-section">
+            <div class="wrapper-content">
+                <a href="#" class="logo">
+                    <img src="img/LogoN.png" alt="logo">
+                </a>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <nav class="right-nav">
+                    <a href="#" class="nav_text_1">Angebote</a>
+                    <a href="#" class="nav_text_2">Über Mich</a>
+                    <a href="#" class="nav_text_3">Rezensionen</a>
+                    <a href="#" class="nav_text_3">Kontakt</a>
+                </nav>
+            </div>
+        <div class="main-part">
+            <div class="index-top">
+                <div class="index-left-part">
+                    <p class="left-text">Lorem ipsum dolor sit amet consectetur. Semper aliquet in vitae tortor rhoncus vel nibh sed donec</p>
+                </div>
+                <div class="index-right-part">
+                    <p class="right-text">Lorem ipsum dolor sit amet consectetur. Gravida vulputate lectus neque ut amet lorem iaculis pulvinar sed. Tempus in
+                    egestas viverra . Lorem ipsum dolor sit amet consectetur. Gravida vulputate lectus neque ut amet lorem iaculis pulvinar
+                    sed. Tempus in egestas viverra .</p>
+                    <div class="index-button">
+                        <button> 
+                            Mehr Erfahren
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="index-bottom">
+                <svg class="arrow-bottom" xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71" fill="none">
+                    <path
+                        d="M6.30762 35.4999C6.30762 41.2685 8.01821 46.9076 11.2231 51.704C14.428 56.5004 18.9832 60.2388 24.3127 62.4464C29.6422 64.6539 35.5066 65.2315 41.1644 64.1061C46.8222 62.9807 52.0192 60.2028 56.0982 56.1238C60.1773 52.0448 62.9551 46.8478 64.0805 41.19C65.2059 35.5322 64.6283 29.6678 62.4208 24.3383C60.2132 19.0088 56.4749 14.4535 51.6784 11.2487C46.882 8.0438 41.2429 6.33321 35.4743 6.33321C27.7414 6.3417 20.3277 9.41733 14.8597 14.8853C9.39174 20.3533 6.31611 27.767 6.30762 35.4999ZM58.8076 35.4999C58.8076 40.1148 57.4391 44.626 54.8752 48.4632C52.3113 52.3003 48.6672 55.291 44.4036 57.0571C40.14 58.8231 35.4484 59.2852 30.9222 58.3849C26.396 57.4845 22.2384 55.2623 18.9751 51.999C15.7119 48.7358 13.4896 44.5782 12.5893 40.052C11.689 35.5258 12.1511 30.8342 13.9171 26.5706C15.6831 22.307 18.6738 18.6628 22.511 16.0989C26.3481 13.535 30.8594 12.1665 35.4743 12.1665C41.6605 12.1735 47.5914 14.634 51.9658 19.0084C56.3401 23.3827 58.8007 29.3136 58.8076 35.4999Z"
+                        fill="#122543" />
+                    <path
+                        d="M21.7455 31.7287L35.4743 45.4575L49.203 31.7287L45.0789 27.6045L35.4743 37.2091L25.8697 27.6045L21.7455 31.7287Z"
+                        fill="#122543" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        .
+    </div>
+</body>
+</html>
